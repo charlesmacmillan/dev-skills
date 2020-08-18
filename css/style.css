@@ -1,0 +1,34 @@
+* {
+  background-color: black;
+  color: rgb(46, 179, 212);
+}
+body {
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr 2fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    grid-area: 2/2/3/3;
+}
+
+img {
+    width: 75%;
+    border: 2px solid cyan; 
+    border-radius: 50%;
+    grid-area: 2/1/3/2;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 204, 0);
+    text-decoration: underline;
+}
+
+a {
+    color: rgb(153, 0, 140);
+}
+
+a:hover {
+    color: rgb(250, 64, 64);
+}
