@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="/css/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= skill.skill %></title>
-  </head>
-
+<%- include('../partials/head') %>
   <body>
     <img src="https://i.imgur.com/43aWexW.png" alt="mandog">
     <main>
       <h1>Skill #<%= skillNum %></h1>
+      <nav><a href="/">Home</a> | <a href="/skills">Skills</a></nav>
       <h3><%= skill.skill %></h3>
       <h3>
-        Skill-Level: <%= skill.experience > 1 ? 'excellent' : 'still improving'
+        Proficiency: <%= skill.experience > 1 ? 'Excellent' : 'Still Improving'
         %>
       </h3>
-      <a href="/skills">back</a>
+      <h3><%= skill.experience%> years of experience. </h3>
     </main>
   </body>
 </html>

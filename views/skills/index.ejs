@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="/css/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Skills</title>
-  </head>
+<%- include('../partials/head') %>
   <body>
-    <img src="https://i.imgur.com/43aWexW.png" alt="mandog">
+    <img src="https://i.imgur.com/43aWexW.png" alt="mandog" />
     <main>
       <h1>My Skills</h1>
+      <nav> <a href="/">Home</a> | <a href="/skills/new">Add New Skill </a></nav>
+      <p>Click on a skill</p>
       <ul>
         <% skills.forEach(function(t) { %>
         <li>
           <a href="/skills/<%= t.id %>"><%= t.skill %></a>
-          <%= t.todo %> - years of experience: <%= t.experience%>
         </li>
         <% }); %>
       </ul>
-      <nav>or return <a href="/">home</a></nav>
+
     </main>
   </body>
 </html>
