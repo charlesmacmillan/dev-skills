@@ -1,15 +1,15 @@
 <%- include('../partials/head') %>
   <body>
     <img src="https://i.imgur.com/43aWexW.png" alt="mandog">
-    <main>
-      <h1>Skill #<%= skillNum %></h1>
+    <main>      
+      <h1><%= skill.skill %></h1>
       <nav><a href="/">Home</a> | <a href="/skills">Skills</a></nav>
-      <h3><%= skill.skill %></h3>
       <h3>
         Proficiency: <%= skill.experience > 1 ? 'Excellent' : 'Still Improving'
         %>
       </h3>
       <h3><%= skill.experience%> years of experience. </h3>
+      <a href="/skills/<%= skill.id %>/edit">Modify Skill</a>
     </main>
   </body>
 </html>

@@ -1,0 +1,16 @@
+<%- include('../partials/head') %>
+
+<body>
+    <img src="https://i.imgur.com/43aWexW.png" alt="mandog" />
+    <main>
+        <h1>Edit Skill</h1>
+        <nav><a href="/">Home</a> | <a href="/skills">Skills</a> | <a href="/skills/<%= skill.id %>"><%= skill.skill %></a></nav>
+        <p></p>
+        <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+            <input type="text" name="skill" value="<%= skill.skill %>" />
+            <button type="submit">Save</button>
+        </form>
+    </main>
+</body>
+
+</html>
